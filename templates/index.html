@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Moje první stránka</title>
+  </head>
+  <body>
+    <h1>Ahoj Pyladies!</h1>
+    <p>
+      Tohle je stránka, kterou všechny opisujete.
+    </p>
+    <a href="druha_stranka">Odkaz</a>
+    <a href="{{ url_for('user', name='blanka')}}">Uzivatel</a>
+    <a href="{{ url_for('piskvorky', pole='-'*20) }}">Piskvorky</a>
+    <br>
+    <br>
+    <img src="{{ url_for('static', filename='kocka.jpg') }}" alt="kocicka1">
+    <!-- <img src="https://www.hluchak.cz/~mikulk/kucka.jpg" alt="kocicka2"> -->
+  </body>
+</html>
